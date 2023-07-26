@@ -10,7 +10,6 @@ class ProductsPage extends StatefulWidget {
 }
 
 class _ProductsPageState extends State<ProductsPage> {
-
   @override
   void initState() {
     Provider.of<ProductProvider>(context, listen: false).setProductModel();
@@ -29,10 +28,15 @@ class _ProductsPageState extends State<ProductsPage> {
             itemBuilder: (context, index) {
               final products = value.getProductModel;
               if (products.isNotEmpty) {
-                return ListTile(
-                  title: Text(products[index].name ?? ''),
-                  subtitle: Text(products[index].description ?? ''),
-                  trailing: Text('${products[index].price ?? 0}'),
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/product', arguments: products[index]);
+                  },
+                  child: ListTile(
+                    title: Text(products[index].name ?? ''),
+                    subtitle: Text(products[index].description ?? ''),
+                    trailing: Text('${products[index].price ?? 0}'),
+                  ),
                 );
               }
               return null;

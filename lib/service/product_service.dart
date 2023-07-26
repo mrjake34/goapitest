@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import '../products/models/product_model.dart';
 
 final class ProductService {
-  final String _baseUrl = 'http://localhost:8080/products';
+  final String _baseUrl = 'http://127.0.0.1:8000/products';
 
   final Dio dio = Dio();
 
