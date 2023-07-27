@@ -24,22 +24,24 @@ class _ProductsPageState extends State<ProductsPage> {
       ),
       body: Consumer<ProductProvider>(
         builder: (BuildContext context, value, Widget? child) {
+          if (value.getProductModel.isEmpty) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
           return ListView.builder(
             itemBuilder: (context, index) {
               final products = value.getProductModel;
-              if (products.isNotEmpty) {
-                return GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/product', arguments: products[index]);
-                  },
-                  child: ListTile(
-                    title: Text(products[index].name ?? ''),
-                    subtitle: Text(products[index].description ?? ''),
-                    trailing: Text('${products[index].price ?? 0}'),
-                  ),
-                );
-              }
-              return null;
+              return GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/product', arguments: products[index]);
+                },
+                child: ListTile(
+                  title: Text(products[index].name ?? ''),
+                  subtitle: Text(products[index].desc ?? ''),
+                  trailing: Text('${products[index].price ?? 0}'),
+                ),
+              );
             },
             itemCount: value.getProductModel.length,
           );

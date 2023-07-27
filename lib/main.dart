@@ -3,6 +3,7 @@ import 'package:goapitest/product_detail_page/view/product_detail_page.dart';
 import 'package:goapitest/products/view/products_page.dart';
 import 'package:provider/provider.dart';
 
+import 'product_detail_page/viewmodel/product_detail_viewmodel.dart';
 import 'products/viewmodels/product_view_model.dart';
 
 void main() {
@@ -11,6 +12,9 @@ void main() {
       providers: [
         ChangeNotifierProvider(
           create: (_) => ProductProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ProductDetailProvider(),
         ),
       ],
       child: const MyApp(),

@@ -5,8 +5,7 @@ import 'package:test/test.dart';
 void main() {
   group('ProductService', () {
     test('getProducts', () async {
-      final productService = ProductService();
-      final products = await productService.getProducts();
+      final products = await ProductService.getProducts();
       expect(products, isA<List<ProductModel>>());
     });
   });

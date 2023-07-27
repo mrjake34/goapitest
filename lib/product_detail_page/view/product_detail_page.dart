@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../products/models/product_model.dart';
+import '../../src/bottom_sheet/custom_bottom_sheet.dart';
+import 'edit_product_name.dart';
 
 class ProductDetailPage extends StatelessWidget {
   const ProductDetailPage({super.key});
@@ -29,7 +31,12 @@ class ProductDetailPage extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () async => await CustomBottomSheet.showBottomSheet(
+                      context: context,
+                      widget: EditProductName(
+                        id: productModel.productID,
+                      ),
+                    ),
                     icon: const Icon(
                       Icons.edit,
                     ),
@@ -38,7 +45,7 @@ class ProductDetailPage extends StatelessWidget {
               ],
             ),
             Text(
-              'Description: ${productModel.description}',
+              'Description: ${productModel.desc}',
               style: labelLarge,
             ),
             Text(
@@ -46,14 +53,12 @@ class ProductDetailPage extends StatelessWidget {
               style: labelLarge,
             ),
             Text(
-              'Count in Stock: ${productModel.quantity}',
+              'Count in Stock: ${productModel.count}',
               style: labelLarge,
-            )
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-

@@ -8,7 +8,7 @@ final class ProductProvider extends ChangeNotifier {
   List<ProductModel> get getProductModel => _productModel;
 
   Future<void> setProductModel() async {
-    _productModel = await ProductService().getProducts();
+    _productModel = await ProductService.getProducts();
     notifyListeners();
   }
 }

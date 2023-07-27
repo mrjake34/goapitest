@@ -4,14 +4,15 @@ part 'product_model.g.dart';
 
 @JsonSerializable()
 class ProductModel {
-  final String? id;
+  final String? objectId;
+  final int? productID;
   final String? name;
-  final String? description;
+  final String? desc;
   final String? image;
   final double? price;
-  final String? quantity;
+  final int? count;
 
-  ProductModel({this.id, this.name, this.description, this.image, this.price, this.quantity});
+  ProductModel({this.objectId, this.productID, this.name, this.desc, this.image, this.price, this.count});
 
   Map<String, dynamic> toMap() => _$ProductModelToJson(this);
 
