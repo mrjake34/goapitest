@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:goapitest/base/utils/navigation/navigation_service.dart';
+import 'package:goapitest/base/utils/navigation/routers.dart';
 import 'package:provider/provider.dart';
 
 import '../viewmodels/product_view_model.dart';
@@ -35,12 +37,31 @@ class _ProductsPageState extends State<ProductsPage> {
               final products = value.getProductModel;
               return GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/product', arguments: products[index]);
+                  NavigationService.instance.navigateToPage(path: RoutersConstants.productDetail, data: products[index]);
                 },
                 child: ListTile(
-                  title: Text(products[index].name ?? ''),
-                  subtitle: Text(products[index].desc ?? ''),
-                  trailing: Text('${products[index].price ?? 0}'),
+                  leading: SizedBox(
+                    height: 50,
+                    width: 50,
+                    child: products[index].image != null
+                        ? Image.network(
+                            products[index].image ?? '',
+                            fit: BoxFit.contain,
+                            errorBuilder: (context, error, stackTrace) {
+                              return const Icon(Icons.image_not_supported);
+                            },
+                          )
+                        : const Icon(Icons.image_not_supported),
+                  ),
+                  title: Text(
+                    products[index].name ?? '',
+                  ),
+                  subtitle: Text(
+                    products[index].desc ?? '',
+                  ),
+                  trailing: Text(
+                    '${products[index].price ?? 0}',
+                  ),
                 ),
               );
             },

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:goapitest/base/constants/colors/colors.dart';
 import 'package:goapitest/screens/home/view/home_page.dart';
+import 'package:goapitest/screens/products/view/products_page.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class MainPage extends StatefulWidget {
@@ -15,9 +16,7 @@ class _MainPageState extends State<MainPage> {
   final int _selectedIndex = 2;
 
   final List<Widget> _widgetOptions = <Widget>[
-    const Text(
-      'Index 1: Cart',
-    ),
+    const ProductsPage(),
     const Text(
       'Index 1: Cart',
     ),

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:goapitest/base/utils/navigation/navigation_router.dart';
+import 'package:goapitest/base/utils/navigation/navigation_service.dart';
 import 'package:goapitest/main_page.dart';
 import 'package:goapitest/screens/product_detail_page/view/product_detail_page.dart';
 import 'package:goapitest/screens/products/viewmodels/product_view_model.dart';
+import 'package:kartal/kartal.dart';
 import 'package:provider/provider.dart';
 import 'screens/product_detail_page/viewmodel/product_detail_viewmodel.dart';
-import 'screens/products/view/products_page.dart';
 
 void main() {
   runApp(
@@ -33,10 +35,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      routes: {
-        '/products': (context) => const ProductsPage(),
-        '/product': (context) => const ProductDetailPage(),
-      },
+      onGenerateRoute: NavigationRouter.instance.generateRoute,
+      navigatorKey: NavigationService.instance.navigatorKey,
       home: const MainPage(),
     );
   }
