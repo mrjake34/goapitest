@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:goapitest/products/viewmodels/product_view_model.dart';
 import 'package:provider/provider.dart';
+
+import '../viewmodels/product_view_model.dart';
 
 class ProductsPage extends StatefulWidget {
   const ProductsPage({super.key});

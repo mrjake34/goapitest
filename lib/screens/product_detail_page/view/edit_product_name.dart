@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goapitest/product_detail_page/viewmodel/product_detail_viewmodel.dart';
+import 'package:goapitest/screens/product_detail_page/viewmodel/product_detail_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class EditProductName extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:goapitest/products/models/product_model.dart';
+import 'package:goapitest/screens/products/models/product_model.dart';
 import 'package:goapitest/service/product_service.dart';
 import 'package:test/test.dart';
 

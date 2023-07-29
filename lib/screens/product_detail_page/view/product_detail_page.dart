@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../src/bottom_sheet/custom_bottom_sheet.dart';
 import '../../products/models/product_model.dart';
-import '../../src/bottom_sheet/custom_bottom_sheet.dart';
 import 'edit_product_name.dart';
 
 class ProductDetailPage extends StatelessWidget {

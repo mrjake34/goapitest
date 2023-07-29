@@ -2,7 +2,8 @@ import 'dart:convert';
 
 import 'package:dio/dio.dart';
 import 'package:goapitest/base/constants/enums/path_enums.dart';
-import '../products/models/product_model.dart';
+
+import '../screens/products/models/product_model.dart';
 
 final class ProductService {
   ProductService._();

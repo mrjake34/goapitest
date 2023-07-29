@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:goapitest/product_detail_page/view/product_detail_page.dart';
-import 'package:goapitest/products/view/products_page.dart';
+import 'package:goapitest/main_page.dart';
+import 'package:goapitest/screens/product_detail_page/view/product_detail_page.dart';
+import 'package:goapitest/screens/products/viewmodels/product_view_model.dart';
 import 'package:provider/provider.dart';
-
-import 'product_detail_page/viewmodel/product_detail_viewmodel.dart';
-import 'products/viewmodels/product_view_model.dart';
+import 'screens/product_detail_page/viewmodel/product_detail_viewmodel.dart';
+import 'screens/products/view/products_page.dart';
 
 void main() {
   runApp(
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         '/products': (context) => const ProductsPage(),
         '/product': (context) => const ProductDetailPage(),
       },
-      home: const ProductsPage(),
+      home: const MainPage(),
     );
   }
 }

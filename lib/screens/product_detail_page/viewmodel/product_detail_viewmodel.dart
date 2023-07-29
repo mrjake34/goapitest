@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../service/product_service.dart';
+import '../../../service/product_service.dart';
 
 final class ProductDetailProvider extends ChangeNotifier {
   String? _name;
