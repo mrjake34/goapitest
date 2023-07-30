@@ -33,6 +33,7 @@ class _ProductsPageState extends State<ProductsPage> {
             );
           }
           return ListView.builder(
+            padding: const EdgeInsets.only(bottom: 15),
             itemBuilder: (context, index) {
               final products = value.getProductModel;
               return GestureDetector(
@@ -43,24 +44,27 @@ class _ProductsPageState extends State<ProductsPage> {
                   leading: SizedBox(
                     height: 50,
                     width: 50,
-                    child: products[index].image != null
-                        ? Image.network(
-                            products[index].image ?? '',
-                            fit: BoxFit.contain,
-                            errorBuilder: (context, error, stackTrace) {
-                              return const Icon(Icons.image_not_supported);
-                            },
-                          )
-                        : const Icon(Icons.image_not_supported),
+                    child: Image.network(
+                      products[index].image ?? '',
+                      fit: BoxFit.contain,
+                      errorBuilder: (context, error, stackTrace) {
+                        return const Icon(Icons.image_not_supported);
+                      },
+                    ),
                   ),
                   title: Text(
                     products[index].name ?? '',
+                    softWrap: true,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   subtitle: Text(
                     products[index].desc ?? '',
+                    maxLines: 2,
+                    softWrap: true,
+                    overflow: TextOverflow.ellipsis,
                   ),
                   trailing: Text(
-                    '${products[index].price ?? 0}',
+                    '${products[index].price?.toStringAsFixed(2) ?? 0}',
                   ),
                 ),
               );

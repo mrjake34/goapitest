@@ -1,0 +1,52 @@
+{
+    "specification": [
+        {
+            "name": "Processor",
+            "values": [
+                "Intel Core i5 10300H",
+                "Intel Core i5 10400H",
+                "Intel Core i7 10750H",
+                "Intel Core i7 10875H",
+                "Intel Core i9 10980HK",
+                "Intel Core i9 10900K"
+            ]
+        },
+        {
+            "name": "Graphics Card",
+            "values": [
+                "NVIDIA GeForce GTX1650Ti",
+                "NVIDIA GeForce GTX1660Ti",
+                "NVIDIA GeForce RTX2060",
+                "NVIDIA GeForce RTX2070",
+                "NVIDIA GeForce RTX2080",
+                "NVIDIA GeForce RTX2080Ti"
+            ]
+        },
+        {
+            "name": "Ram",
+            "values": [
+                "8 GB",
+                "16 GB",
+                "32 GB",
+                "64 GB"
+            ]
+        },
+        {
+            "name": "SSD",
+            "values": [
+                "512 GB SSD",
+                "1 TB SSD",
+                "2 TB SSD",
+                "4 TB SSD"
+            ]
+        },
+        {
+            "name": "Operating System",
+            "values": [
+                "Freedos",
+                "Windows 10 Home",
+                "Windows 10 Pro"
+            ]
+        }
+    ]
+}

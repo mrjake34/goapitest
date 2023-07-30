@@ -25,7 +25,7 @@ final class ProductService {
       final List<ProductModel> products = [];
       final jsonDecoded = jsonDecode(response.data);
       for (var element in jsonDecoded) {
-        products.add(ProductModel.fromMap(element));
+        products.add(ProductModel.fromJson(element));
       }
       return products;
     } else {

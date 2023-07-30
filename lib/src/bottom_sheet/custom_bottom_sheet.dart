@@ -10,9 +10,12 @@ final class CustomBottomSheet {
       context: context,
       showDragHandle: true,
       builder: (context) {
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: widget,
+        return SizedBox(
+          width: MediaQuery.of(context).size.width,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: widget,
+          ),
         );
       },
     );
