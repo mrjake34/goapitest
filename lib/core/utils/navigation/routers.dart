@@ -1,5 +1,5 @@
 class RoutersConstants {
-  const RoutersConstants._init();
+  const RoutersConstants._();
   //Home
   static const String home = '/';
   static const String notFoundPage = '/notFoundPage';

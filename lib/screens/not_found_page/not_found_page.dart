@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../base/utils/navigation/navigation_service.dart';
-import '../../base/utils/navigation/routers.dart';
+import '../../core/utils/navigation/navigation_service.dart';
+import '../../core/utils/navigation/routers.dart';
 
 class NotFoundPage extends StatelessWidget {
   const NotFoundPage({super.key});

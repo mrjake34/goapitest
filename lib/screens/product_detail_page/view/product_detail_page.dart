@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:goapitest/src/bottom_sheet/custom_bottom_sheet.dart';
 import 'package:kartal/kartal.dart';
-import '../../../base/utils/navigation/navigation_service.dart';
+import '../../../core/utils/navigation/navigation_service.dart';
 import '../../products/models/product_model.dart';
 
 part 'image_slider.dart';

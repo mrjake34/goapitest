@@ -1,0 +1,35 @@
+{
+    "general": {
+        "specialOffer": "Özel Fırsat",
+        "popular": "Popüler",
+        "newArrival": "Yeni Gelenler"
+    },
+
+    "button": {
+        "buyNow": "Şimdi Satın Al",
+        "addToCart": "Sepete Ekle",
+        "viewDetails": "Detayları Görüntüle",
+        "seeAll": "Tümünü Gör",
+        "readMore": "Devamını Oku",
+        "specification": "Özellikler",
+        "priceHistory": "Fiyat Geçmişi"
+    },
+
+    "products": {
+        "title": "Ürünler",
+        "all": "Tümü",
+        "description": "Açıklama"
+    },
+
+    "speficiation": {
+        "title": "Özellikler",
+        "processor": "İşlemci",
+        "ram": "RAM",
+        "storage": "Depolama",
+        "display": "Ekran",
+        "camera": "Kamera",
+        "battery": "Batarya",
+        "os": "İşletim Sistemi",
+        "graphics": "Grafik"
+    }
+}

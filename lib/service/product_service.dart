@@ -1,13 +1,13 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:goapitest/base/constants/enums/path_enums.dart';
+import 'package:goapitest/core/constants/enums/path_enums.dart';
 
 import '../screens/products/models/product_model.dart';
 
 final class ProductService {
   ProductService._();
-  static const String baseUrl = 'http://192.168.10.5:8000/';
+  static const String baseUrl = 'http://efes.tech:8080/';
 
   static final Dio dio = Dio(
     BaseOptions(

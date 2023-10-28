@@ -1,9 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:goapitest/base/constants/colors/colors.dart';
+import 'package:goapitest/core/constants/colors/colors.dart';
 import 'package:goapitest/screens/home/view/home_page.dart';
 import 'package:goapitest/screens/products/view/products_page.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
+import 'package:provider/provider.dart';
+
+import 'core/utils/ad/ad_manager.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -14,6 +18,13 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   final int _selectedIndex = 2;
+  BannerAd? bannerAd;
+
+  @override
+  void initState() {
+    context.read<AdManager>().loadBanner();
+    super.initState();
+  }
 
   final List<Widget> _widgetOptions = <Widget>[
     const ProductsPage(),

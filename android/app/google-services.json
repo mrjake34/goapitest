@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "831194439801",
+    "project_id": "go-api-test-8bff8",
+    "storage_bucket": "go-api-test-8bff8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831194439801:android:2c98849e5c387d9b2334a8",
+        "android_client_info": {
+          "package_name": "com.example.goapitest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831194439801-cd2jmsqie3hqt5kq192hc6u5g1p4m9v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmZXQ6NAn1AycQ2AYqyRaljDHOvLzxf00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831194439801-cd2jmsqie3hqt5kq192hc6u5g1p4m9v5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

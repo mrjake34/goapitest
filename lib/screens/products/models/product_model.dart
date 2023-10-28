@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:json_annotation/json_annotation.dart';
 
 part 'product_model.g.dart';
@@ -8,7 +9,10 @@ class ProductModel {
   final int? productID;
   final String? name;
   final int? count;
+  final int? discount;
   final String? desc;
+  final String? category;
+  final String? standOut;
   final double? price;
   final String? image;
   final List<Specification>? specification;
@@ -18,7 +22,10 @@ class ProductModel {
     this.productID,
     this.name,
     this.count,
+    this.discount,
     this.desc,
+    this.category,
+    this.standOut,
     this.price,
     this.image,
     this.specification,
@@ -33,7 +40,10 @@ class ProductModel {
     int? productID,
     String? name,
     int? count,
+    int? discount,
     String? desc,
+    String? category,
+    String? standOut,
     double? price,
     String? image,
     List<Specification>? specification,
@@ -43,7 +53,10 @@ class ProductModel {
       productID: productID ?? this.productID,
       name: name ?? this.name,
       count: count ?? this.count,
+      discount: discount ?? this.discount,
       desc: desc ?? this.desc,
+      category: category ?? this.category,
+      standOut: standOut ?? this.standOut,
       price: price ?? this.price,
       image: image ?? this.image,
       specification: specification ?? this.specification,

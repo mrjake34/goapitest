@@ -1,0 +1,36 @@
+{
+    "general": {
+        "specialOffer": "Special Offer",
+        "popular": "Popular",
+        "newArrival": "New Arrival"
+
+    },
+
+    "button": {
+        "buyNow": "Buy Now",
+        "addToCart": "Add to Cart",
+        "viewDetails": "View Details",
+        "seeAll": "See All",
+        "readMore": "Read More",
+        "specification": "Specification",
+        "priceHistory": "Price History"
+    },
+
+    "products": {
+        "title": "Products",
+        "all": "All",
+        "description": "Description"
+    },
+
+    "speficiation": {
+        "title": "Specification",
+        "processor": "Processor",
+        "ram": "RAM",
+        "storage": "Storage",
+        "display": "Display",
+        "camera": "Camera",
+        "battery": "Battery",
+        "os": "OS",
+        "graphics": "Graphics"
+    }
+}

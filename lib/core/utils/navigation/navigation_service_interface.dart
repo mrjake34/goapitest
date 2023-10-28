@@ -3,3 +3,5 @@ abstract class NavigationServiceInterface {
   Future<void> navigateToPageAndRemoveUntil({required String path, Object? data});
   void navigateToBack();
 }
+
+

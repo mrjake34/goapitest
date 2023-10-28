@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goapitest/base/utils/navigation/navigation_service.dart';
-import 'package:goapitest/base/utils/navigation/routers.dart';
+import 'package:goapitest/core/utils/navigation/navigation_service.dart';
+import 'package:goapitest/core/utils/navigation/routers.dart';
 import 'package:provider/provider.dart';
 
 import '../viewmodels/product_view_model.dart';
